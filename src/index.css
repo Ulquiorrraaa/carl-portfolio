@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #22ffaa; /* Ulquiorra Reiatsu Green */
+  --color-void: #0a0a0a; /* Absolute Void Black */
+  --color-card: #111113; /* Deep Hollow Gray */
+  --color-text: #e5e5e5; /* Pale Ash */
+  --color-accent: #0a3d2f; /* Deep Despair Green */
+  --color-mask: #e0e0e0; /* Hollow Mask White */
+  
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Cinzel", serif; /* Elegant, cold, aristocratic feel */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-void);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+/* Ulquiorra-inspired utilities */
+@utility reiatsu-glow {
+  box-shadow: 0 0 20px rgba(34, 255, 170, 0.35),
+              0 0 40px rgba(34, 255, 170, 0.15);
+  border-color: rgba(34, 255, 170, 0.5);
+}
+
+@utility void-glow {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9),
+              inset 0 0 60px rgba(34, 255, 170, 0.08);
+}
+
+@utility hollow-text {
+  text-shadow: 0 0 15px rgba(34, 255, 170, 0.6);
+}
+
+@utility mask-border {
+  border: 2px solid rgba(224, 224, 224, 0.15);
+  position: relative;
+}
+
+.mask-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 1px solid rgba(34, 255, 170, 0.2);
+  border-radius: inherit;
+  pointer-events: none;
+}
