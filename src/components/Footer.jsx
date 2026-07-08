@@ -88,9 +88,7 @@ const Footer = () => {
           {/* Right */}
           <div className="text-center md:text-right text-zinc-500 text-xs">
             © {new Date().getFullYear()} Carl Dave Palma<br />
-            All Rights Reserved
           </div>
-
         </div>
       </div>
     </footer>
