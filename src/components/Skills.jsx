@@ -22,7 +22,6 @@ const skillCategories = [
       { name: "PHP", icon: <FaPhp /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
       { name: "Responsive", icon: <FaDesktop /> },
-      { name: "Figma", icon: <SiFigma /> },
       { name: "GitHub", icon: <FaGithub /> },
       { name: "MySQL", icon: <SiMysql /> },
       { name: "MongoDB", icon: <SiMongodb /> },
@@ -31,6 +30,7 @@ const skillCategories = [
   {
     title: "DATA & TOOLS",
     skills: [
+      { name: "Figma", icon: <SiFigma /> },
       { name: "Excel", icon: <FaFileExcel /> },
       { name: "Word", icon: <FaFileWord /> },
       { name: "PowerPoint", icon: <FaFilePowerpoint /> },

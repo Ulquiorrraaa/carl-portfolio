@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiDownload, FiArrowRight } from 'react-icons/fi';
-import profilePic from '../assets/g.jpg';
+import profilePic from '../assets/cd.jpg';
 
 const Hero = () => {
   return (
