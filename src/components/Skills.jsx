@@ -46,7 +46,7 @@ const Skills = () => {
         
         <div className="flex items-center gap-6 mb-20">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
-          <h2 className="text-5xl font-black tracking-[-0.04em] text-white">SKILLS</h2>
+          <h2 className="text-5xl font-black tracking-[-0.04em] text-white font-display">SKILLS</h2>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
         </div>
 
@@ -60,7 +60,7 @@ const Skills = () => {
               transition={{ delay: idx * 0.1 }}
               className="bg-card border border-white/10 p-10 rounded-3xl"
             >
-              <h3 className="text-primary text-sm tracking-[0.25em] font-bold mb-10 uppercase">
+              <h3 className="text-primary text-sm tracking-[0.25em] font-bold mb-10 uppercase font-display">
                 {category.title}
               </h3>
               

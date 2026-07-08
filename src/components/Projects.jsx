@@ -15,7 +15,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32 px-8 bg-background border-t border-zinc-800">
+    <section id="projects" className="py-32 px-8 bg-void border-t border-white/10">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-xs font-mono tracking-[0.3em] mb-16 text-zinc-400 uppercase flex items-center gap-6">
           <span className="w-16 h-[1px] bg-primary opacity-70"></span> Classified Archives
@@ -31,19 +31,16 @@ const Projects = () => {
               className={`flex flex-col md:flex-row gap-12 items-center ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
             >
               <div className="w-full md:w-1/2 overflow-hidden border border-zinc-700 relative group cursor-pointer shadow-2xl shadow-black/40 rounded-xl">
-                {/* Clean Image */}
                 <img 
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-all duration-500 group-hover:scale-[1.03]" 
                 />
-                
-                {/* Subtle overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               
               <div className="w-full md:w-1/2 space-y-8">
-                <h3 className="text-3xl font-black text-white uppercase tracking-tighter">{project.title}</h3>
+                <h3 className="text-3xl font-black text-white font-display uppercase tracking-tighter">{project.title}</h3>
                 
                 <div className="bg-card p-8 border border-zinc-700 text-sm text-zinc-300 leading-loose tracking-wide shadow-lg">
                   {project.description}

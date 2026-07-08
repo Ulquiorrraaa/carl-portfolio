@@ -10,28 +10,30 @@ const Navbar = () => {
     { name: 'HOME', to: 'home' },
     { name: 'ABOUT', to: 'about' },
     { name: 'SKILLS', to: 'skills' },
-    { name: 'EXP', to: 'experience' },
+    { name: 'EXPERIENCE', to: 'experience' },
     { name: 'PROJECTS', to: 'projects' },
   ];
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-void/90 backdrop-blur-md border-b border-white/10 py-3 md:py-4">
+    <header className="fixed w-full top-0 z-50 bg-void/95 backdrop-blur-md border-b border-white/10 py-4">
       <div className="max-w-7xl mx-auto px-6 md:px-8 flex justify-between items-center">
         
+       
         <motion.div 
           initial={{ opacity: 0, x: -30 }} 
           animate={{ opacity: 1, x: 0 }}
-          className="flex items-center gap-2.5"
+          className="flex items-center gap-3"
         >
-          <div className="w-5 h-5 rounded-full border-2 border-primary/70 flex items-center justify-center">
-            <span className="text-[8px] font-bold text-primary">04</span>
+          <div className="w-6 h-6 rounded-full border border-primary/70 flex items-center justify-center">
+            <span className="text-xs font-bold text-primary">04</span>
           </div>
-          <div className="text-xl font-black tracking-[-0.05em] text-white">
-            CARL<span className="text-primary">DAVE</span>
+          <div className="text-2xl font-black tracking-[-0.04em] text-white font-display">
+            CARL<span className="text-primary">.</span>
           </div>
         </motion.div>
 
-        <div className="hidden md:flex gap-6 text-sm tracking-widest font-medium">
+       
+        <div className="hidden md:flex gap-6 lg:gap-6 text-sm tracking-widest font-medium font-display">
           {navLinks.map((link, index) => (
             <Link 
               key={index} 
@@ -48,33 +50,36 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div 
-          className="md:hidden text-2xl text-zinc-300 cursor-pointer hover:text-primary transition-colors" 
+       
+        <button 
+          className="md:hidden text-3xl text-zinc-300 hover:text-primary transition-colors"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FiX /> : <FiMenu />}
-        </div>
+        </button>
       </div>
 
-      {/* Mobile Menu - Hollow Style */}
+    
       {isOpen && (
         <motion.div 
           initial={{ opacity: 0, y: -10 }} 
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden absolute top-full left-0 w-full bg-card/95 border-b border-white/10 py-5 flex flex-col items-center gap-5 text-base shadow-xl"
+          className="md:hidden bg-card border-t border-white/10 py-6"
         >
-          {navLinks.map((link, index) => (
-            <Link 
-              key={index} 
-              to={link.to} 
-              smooth={true} 
-              duration={600} 
-              onClick={() => setIsOpen(false)}
-              className="text-zinc-400 hover:text-primary transition-colors cursor-pointer"
-            >
-              {link.name}
-            </Link>
-          ))}
+          <div className="flex flex-col items-center gap-6 text-base font-display">
+            {navLinks.map((link, index) => (
+              <Link 
+                key={index} 
+                to={link.to} 
+                smooth={true} 
+                duration={500} 
+                onClick={() => setIsOpen(false)}
+                className="text-zinc-400 hover:text-primary transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
         </motion.div>
       )}
     </header>

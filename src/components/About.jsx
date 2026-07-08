@@ -6,7 +6,7 @@ const About = () => {
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-6 mb-12 md:mb-16">
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
-          <h2 className="text-4xl md:text-5xl font-black tracking-[-0.04em] text-white">
+          <h2 className="text-4xl md:text-5xl font-black tracking-[-0.04em] text-white font-display">
             ABOUT
           </h2>
           <div className="flex-1 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>

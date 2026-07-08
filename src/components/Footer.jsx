@@ -15,13 +15,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-card border-t border-white/10 py-12 relative">
+    <footer className="bg-card border-t border-white/10 py-6 relative">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-10">
 
-          {/* Left */}
+        
           <div className="text-center md:text-left">
-            <div className="text-2xl font-black tracking-[-0.02em] text-white">
+            <div className="text-2xl font-black tracking-[-0.02em] text-white font-display">
               CARL DAVE PALMA
             </div>
             <p className="text-primary text-xs tracking-[2px] mt-1.5">
@@ -29,7 +29,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Center - Socials */}
           <div className="flex flex-col items-center gap-3">
             <div className="flex gap-7 text-3xl">
               <a
@@ -49,7 +48,7 @@ const Footer = () => {
                 <FiLinkedin />
               </a>
               <a
-                href="https://www.instagram.com/criticarll/"   // ← Replace with your IG username
+                href="https://www.instagram.com/criticarll/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-zinc-400 hover:text-primary transition-all hover:scale-125"
@@ -57,7 +56,7 @@ const Footer = () => {
                 <FiInstagram />
               </a>
               <a
-                href="https://www.facebook.com/carl.dave.861668"   // ← Replace with your FB username or page
+                href="https://www.facebook.com/carl.dave.861668"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-zinc-400 hover:text-primary transition-all hover:scale-125"
@@ -73,7 +72,7 @@ const Footer = () => {
               </button>
             </div>
 
-            {/* Copy Feedback */}
+           
             {copied && (
               <p className="text-green-400 text-sm font-medium flex items-center gap-1.5">
                 <FiCheck size={16} /> Email copied successfully!
@@ -85,10 +84,12 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Right */}
+    
           <div className="text-center md:text-right text-zinc-500 text-xs">
             © {new Date().getFullYear()} Carl Dave Palma<br />
+            All Rights Reserved
           </div>
+
         </div>
       </div>
     </footer>

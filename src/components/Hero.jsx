@@ -22,7 +22,7 @@ const Hero = () => {
             <span className="text-xs uppercase tracking-widest text-zinc-500">Junior Web Developer</span>
           </div>
 
-          <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-black tracking-[-0.06em] leading-none text-white">
+          <h1 className="text-6xl sm:text-7xl md:text-7xl lg:text-8xl font-black tracking-[-0.06em] leading-none text-white font-display">
             CARL DAVE<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-primary to-white">PALMA</span>
           </h1>
