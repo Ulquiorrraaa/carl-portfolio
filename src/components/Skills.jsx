@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import { 
   FaHtml5, FaCss3Alt, FaPhp, FaGithub, FaDesktop,
   FaFileExcel, FaFileWord, FaFilePowerpoint, FaPalette,
-  FaNodeJs, FaVuejs 
+  FaNodeJs, FaVuejs, FaLaravel
 } from 'react-icons/fa';
 import { 
   SiJavascript, SiTailwindcss, SiMysql, SiFigma, 
-  SiMongodb, SiExpress 
+  SiMongodb, SiExpress,
 } from 'react-icons/si';
 
 const skillCategories = [
@@ -20,6 +20,7 @@ const skillCategories = [
       { name: "Express.js", icon: <SiExpress /> },
       { name: "Vue.js", icon: <FaVuejs /> },
       { name: "PHP", icon: <FaPhp /> },
+      { name: "Laravel", icon: <FaLaravel /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss /> },
       { name: "Responsive", icon: <FaDesktop /> },
       { name: "GitHub", icon: <FaGithub /> },

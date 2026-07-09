@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Guagua Ticket Trends",
     description: "A comprehensive Violation Data Analysis System. Features include secure user authentication, an analytics dashboard with dynamic Chart.js reporting, and heatmap visualization using Leaflet for robust ticket management.",
-    tech: ["Tailwind CSS", "MySQL", "Chart.js", "Leaflet"],
+    tech: ["Laravel","Blade Template","Tailwind CSS", "MySQL", "Chart.js", "Leaflet"],
     image: tmuImg,
     github: "https://github.com/Ulquiorrraaa/TMU",
     live: "https://tmu.onrender.com"
