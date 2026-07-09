@@ -28,7 +28,7 @@ const Navbar = () => {
             <span className="text-xs font-bold text-primary">04</span>
           </div>
           <div className="text-2xl font-black tracking-[-0.04em] text-white font-display">
-            CARL<span className="text-primary">.</span>
+            CARL<span className="text-primary">DEV</span>
           </div>
         </motion.div>
 
